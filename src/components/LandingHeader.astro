@@ -2,25 +2,20 @@
 import Logo from "./Logo.astro";
 ---
 
-<header
-    id="landing-header"
-    class="py-2 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-current"
->
+<header id="landing-header" class="py-2 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-current">
     <div class="flex flex-grow basis-0">
         <a href="#home"><Logo /></a>
     </div>
 
     <nav class="hidden xl:block sm:hidden">
-        <ul
-            class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
-        >
-            <li><a href="#Cybertruck">Cybertruck</a></li>
-            <li><a href="#Model_S">Model S</a></li>
-            <li><a href="#Model_3">Model 3</a></li>
-            <li><a href="#Model_X">Model X</a></li>
-            <li><a href="#Model_Y">Model Y</a></li>
-            <li><a href="#Powerwall">Powerwall</a></li>
-            <li><a href="#Carga">Carga</a></li>
+        <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li class="list_hover"><a href="#Cybertruck">Cybertruck</a></li>
+            <li class="list_hover"><a href="#Model_S">Model S</a></li>
+            <li class="list_hover"><a href="#Model_3">Model 3</a></li>
+            <li class="list_hover"><a href="#Model_X">Model X</a></li>
+            <li class="list_hover"><a href="#Model_Y">Model Y</a></li>
+            <li class="list_hover"><a href="#Powerwall">Powerwall</a></li>
+            <li class="list_hover"><a href="#Carga">Carga</a></li>
         </ul>
     </nav>
 
@@ -28,16 +23,13 @@ import Logo from "./Logo.astro";
         <ul
             class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
         >
-            <li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
-            <li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
-            <li><a id="menu-btn" href="#">Menú</a></li>
+            <li class="list_hover hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
+            <li class="list_hover hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
+            <li class="list_hover"><a id="menu-btn" href="#">Menú</a></li>
         </ul>
     </nav>
 
-    <nav
-        id="modal-menu"
-        class="hidden xl:hidden flex flex-col bg-white fixed top-0 left-0 right-0 bottom-0"
-    >
+    <nav id="modal-menu" class="hidden xl:hidden flex flex-col bg-white fixed top-0 left-0 right-0 bottom-0">
         <button id="close-btn" class="w-screen flex justify-end p-5">
             <img
                 class="text-black h-6"
@@ -45,18 +37,14 @@ import Logo from "./Logo.astro";
                 alt="close image"
             />
         </button>
-        <ul
-            class="flex flex-col mt-4 [&>li>a]:transition-colors [&>li]:m-3 [&>li>a]:flex [&>li>a]:justify-between [&>li>a]:duration-200 [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:rounded-md [&>li>a]:w-full"
-        >
+        <ul class="flex flex-col mt-4 [&>li>a]:transition-colors [&>li]:m-3 [&>li>a]:flex [&>li>a]:justify-between [&>li>a]:duration-200 [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:rounded-md [&>li>a]:w-full">
             <li>
-                <a class="hover:bg-slate-100" href="#home"
-                    >Home
+                <a class="hover:bg-slate-100" href="#home">Home
                     <img class="h-5" alt="arrow icon" src="/arrow-icon.svg" />
                 </a>
             </li>
             <li>
-                <a class="hover:bg-slate-100" href="#Cybertruck"
-                    >Cybertruck
+                <a class="hover:bg-slate-100" href="#Cybertruck">Cybertruck
                     <img class="h-5" alt="arrow icon" src="/arrow-icon.svg" />
                 </a>
             </li>
@@ -138,13 +126,9 @@ import Logo from "./Logo.astro";
             "No se encontraron algunos elementos necesarios en el DOM.",
         );
     }
-</script>
 
-<script>
-    const listItem = document.querySelectorAll("#landing-header li");
-    const menuBackDrop = document.querySelector(
-        "#menu-backdrop",
-    ) as HTMLElement;
+    const listItem = document.querySelectorAll("#landing-header .list_hover");
+    const menuBackDrop = document.querySelector("#menu-backdrop",) as HTMLElement;
 
     listItem.forEach((item) => {
         item.addEventListener("mouseenter", () => {
@@ -164,9 +148,7 @@ import Logo from "./Logo.astro";
             menuBackDrop.style.visibility = "hidden";
         });
     });
-</script>
 
-<script>
     const $header = document.querySelector("#landing-header") as HTMLElement;
     const observerOptions = {
         root: null,
