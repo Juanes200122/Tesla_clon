@@ -4,8 +4,8 @@
     <img src="https://profile-counter.glitch.me/Juanes200122/count.svg" />
 </p>
 
-```sh
-npm create astro@latest -- --template basics
+```bash
+git clone https://github.com/Juanes200122/Tesla_clon.git
 ```
 <p>
     <a href="https://www.linkedin.com/in/juan-estaban-ar%C3%A9valo-056bab240/" target="_blank" rel="Linkedin">
@@ -18,9 +18,7 @@ npm create astro@latest -- --template basics
 
 
 > 🧑‍🚀"**Experiencia Tesla:** Clon Interactivo y Responsivo con Astro y Tailwind"
-> <p>Esta página cuenta con una barra de navegación con enlaces internos para moverse por las diferentes secciones. El diseño es responsivo y se ve excelente en dispositivos móviles. También incluye un desplazamiento vertical con animación obligatoria, mejorando la experiencia del usuario..</p>
-
-
+> <p>Esta página cuenta con una barra de navegación con enlaces internos para moverse por las diferentes secciones. El diseño es responsivo y se ve excelente en dispositivos móviles. También incluye un desplazamiento vertical con animación obligatoria, mejorando la experiencia del usuario. 👀👉🏼https://tesla-with-astro.vercel.app/#Cybertruck</p>
 
 
 ## 🚀 Estructura de proyecto
