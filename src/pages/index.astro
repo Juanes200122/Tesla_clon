@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import A4_LandingModel_Y from "../components/A4_LandingModel_Y.astro";
+import A1_LandingModel_S from "../components/A1_LandingModel_S.astro";
+import A7LandingCyber from "../components/A7_LandingCyber.astro";
+import A2LandingModel3 from "../components/A2_LandingModel_3.astro";
+import A3LandingModelX from "../components/A3_LandingModel_X.astro";
+import A5LandingModelP from "../components/A5_LandingModel_P.astro";
+import A6LandingCarga from "../components/A6_LandingCarga.astro";
+---
+
+<style>
+	main::-webkit-scrollbar {width: 5px; height: 12px;}
+	main::-webkit-scrollbar-track {background: #000000;}
+	main::-webkit-scrollbar-thumb {background: #ffffff; border-radius: 10px;}
+</style>
+
+
+<Layout title="Tesla with Astro">
+	<LandingHeader />
+
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-x-hidden scroll-smooth">
+
+	
+		<div class="snap-center">
+			<HeroSection />
+		</div>
+		<div class="snap-center">
+			<A7LandingCyber />
+		</div>
+		<div class="snap-center">
+			<A1_LandingModel_S />
+		</div>
+		<div class="snap-center">
+			<A2LandingModel3 />
+		</div>
+		<div class="snap-center">
+			<A3LandingModelX />
+		</div>
+		<div class="snap-center">
+			<A4_LandingModel_Y />
+		</div>
+		<div class="snap-center">
+			<A5LandingModelP />
+		</div>
+		<div class="snap-center">
+			<A6LandingCarga />
+		</div>	
+	</main>
+</Layout>
