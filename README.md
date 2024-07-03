@@ -18,7 +18,7 @@ git clone https://github.com/Juanes200122/Tesla_clon.git
 
 
 > 🧑‍🚀"**Experiencia Tesla:** Clon Interactivo y Responsivo con Astro y Tailwind"
-> <p>Esta página cuenta con una barra de navegación con enlaces internos para moverse por las diferentes secciones. El diseño es responsivo y se ve excelente en dispositivos móviles. También incluye un desplazamiento vertical con animación obligatoria, mejorando la experiencia del usuario. 👀👉🏼https://tesla-with-astro.vercel.app/#Cybertruck</p>
+> <p>Esta página cuenta con una barra de navegación con enlaces internos para moverse por las diferentes secciones. El diseño es responsivo y se ve excelente en dispositivos móviles. También incluye un desplazamiento vertical con animación obligatoria, mejorando la experiencia del usuario. 👀👉🏼https://tesla-with-astro.vercel.app</p>
 
 
 ## 🚀 Estructura de proyecto
